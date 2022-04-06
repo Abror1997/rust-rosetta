@@ -9,4 +9,4 @@ url = "http://rosettacode.org/wiki/Mouse_position"
 winapi = { version = "0.3.7", features = ["impl-default", "winuser"] }
 
 [target.'cfg(target_os="linux")'.dependencies]
-x11 = { version = "2.6.0", features = ["xlib"], optional = true }
+x11 = { version = "2.19.1", features = ["xlib"], optional = true }
