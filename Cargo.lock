@@ -1044,12 +1044,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "const-sha1"
-version = "0.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fb58b6451e8c2a812ad979ed1d83378caa5e927eef2622017a45f251457c2c9d"
-
-[[package]]
 name = "constrained-random-points-on-a-circle"
 version = "0.1.0"
 dependencies = [
@@ -5705,12 +5699,6 @@ name = "square-free-integers"
 version = "0.1.0"
 
 [[package]]
-name = "squote"
-version = "0.1.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1fccf17fd09e2455ea796d2ad267b64fa2c5cbd8701b2a93b555d2aa73449f7d"
-
-[[package]]
 name = "stack"
 version = "0.1.0"
 
@@ -6697,39 +6685,46 @@ dependencies = [
 
 [[package]]
 name = "windows"
-version = "0.7.0"
+version = "0.38.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "388ac37f05f32071485db1af226f92ee98432dc6b5ba51ebee121bf01c8e2446"
+checksum = "0c47017195a790490df51a3e27f669a7d4f285920d90d03ef970c5d886ef0af1"
 dependencies = [
- "const-sha1",
- "windows_gen",
- "windows_macros",
+ "windows_aarch64_msvc",
+ "windows_i686_gnu",
+ "windows_i686_msvc",
+ "windows_x86_64_gnu",
+ "windows_x86_64_msvc",
 ]
 
 [[package]]
-name = "windows_gen"
-version = "0.7.0"
+name = "windows_aarch64_msvc"
+version = "0.38.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "91332e7e62443e735f74b6d701dcc053f26b08fa63cba5b60a6cd8b64b0cf481"
-dependencies = [
- "proc-macro2 1.0.24",
- "quote 1.0.9",
- "squote",
- "syn 1.0.67",
-]
+checksum = "b12add87e2fb192fff3f4f7e4342b3694785d79f3a64e2c20d5ceb5ccbcfc3cd"
 
 [[package]]
-name = "windows_macros"
-version = "0.7.0"
+name = "windows_i686_gnu"
+version = "0.38.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c9d7c54fe11679c0805051a5dc73b87b7abf13fefd4fdfdea9b888673a498ec8"
-dependencies = [
- "proc-macro2 1.0.24",
- "quote 1.0.9",
- "squote",
- "syn 1.0.67",
- "windows_gen",
-]
+checksum = "4c98f2db372c23965c5e0f43896a8f0316dc0fbe48d1aa65bea9bdd295d43c15"
+
+[[package]]
+name = "windows_i686_msvc"
+version = "0.38.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cdf0569be0f2863ab6a12a6ba841fcfa7d107cbc7545a3ebd57685330db0a3ff"
+
+[[package]]
+name = "windows_x86_64_gnu"
+version = "0.38.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "905858262c8380a36f32cb8c1990d7e7c3b7a8170e58ed9a98ca6d940b7ea9f1"
+
+[[package]]
+name = "windows_x86_64_msvc"
+version = "0.38.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "890c3c6341d441ffb38f705f47196e3665dc6dd79f6d72fa185d937326730561"
 
 [[package]]
 name = "winit"
